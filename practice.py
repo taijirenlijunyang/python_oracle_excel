@@ -20,7 +20,7 @@ def data_sql(user, pwd, name_list, sql_list,num):
     """
     # finally_data = []
     queray_data = {}
-    db = cx_Oracle.connect(user, pwd, '10.224.234.133:1521/orclpdb1')
+    db = cx_Oracle.connect(user, pwd, 'ip:port/name')
     print('连接数据库完成')
     cursor = db.cursor()
     number = 1
